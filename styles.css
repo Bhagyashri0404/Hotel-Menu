@@ -1,0 +1,243 @@
+
+/* General body styling */
+body { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  /* background: #fafafa;  */
+  background-color: #fff0f0;
+  margin: 0; 
+  padding: 0; 
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header { 
+  /* background: linear-gradient(135deg, #00898b, #006666); */
+  /* background: linear-gradient(135deg, #ff5722, #e91e63); */
+  background: linear-gradient(to right, #750941, #2A385E);
+  color: white; 
+  text-align: center; 
+  padding: 30px 20px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+header h1 { 
+  margin: 0; 
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  color: #e0faff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+header h1:hover {
+  transform: scale(1.05);
+}
+
+/* Container */
+.container { 
+  max-width: 1100px; 
+  margin: 30px auto; 
+  padding: 0 20px; 
+}
+
+/* Tabs (Main categories) */
+.tabs { 
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 25px; 
+  flex-wrap: wrap; 
+}
+/* .tab { 
+  padding: 12px 25px; 
+  margin: 6px; 
+  background: #f1f1f1; 
+  cursor: pointer; 
+  border-radius: 25px; 
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.tab:hover {
+  background: #ddd;
+  transform: translateY(-2px);
+}
+.tab.active { 
+  background: #00898b; 
+  color: white; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+} */
+ .tab {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #f1f1f1;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  background: #ddd;
+}
+
+.tab.veg-active {
+  /* background: green; */
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tab.nonveg-active {
+  /* background: red; */
+  background: linear-gradient(135deg, #e53935, #b71c1c);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Subcategories */
+.subcategory { 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-bottom: 25px; 
+}
+.subcategory div { 
+  padding: 10px 18px; 
+  margin: 5px; 
+  background: #eaeaea; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  transition: 0.3s;
+  font-size: 0.95em;
+}
+.subcategory div:hover {
+  background: #ccc;
+}
+.subcategory div.active { 
+  background: #750941; 
+  color: #ffff;
+  font-weight: 700;
+}
+
+/* Menu items */
+.menu-items { 
+  max-width: 850px; 
+  margin: 0 auto; 
+  background: #fff; 
+  padding: 20px; 
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.category-title { 
+  margin-top: 30px; 
+  font-size: 1.5em; 
+  color: #8b0000; 
+  border-bottom: 3px solid #8b0000; 
+  padding-bottom: 6px; 
+  margin-bottom: 15px;
+  font-weight: bold;
+
+}
+
+/* Individual item row */
+.item { 
+  display: flex; 
+  justify-content: space-between; 
+  padding: 12px 0; 
+  border-bottom: 1px solid #ddd; 
+  font-size: 1.05em;
+}
+.item:last-child { border-bottom: none; }
+
+/* Veg / Non-Veg Indicators */
+.veg { 
+  color: green; 
+  font-weight: bold; 
+}
+.nonveg { 
+  color: crimson; 
+  font-weight: bold; 
+}
+
+
+/* 
+ashirwad code */
+.divider {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: #8b0000; /* tujhya color pramane change kar */
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+
+
+#subcat {
+    /* Main container: Allows buttons to wrap and spaces them out */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Increased gap for better card separation */
+    padding: 10px;
+}
+
+.tab-image-button {
+    /* 1. KEY: Stack content vertically (image above text) */
+    display: flex;
+    flex-direction: column; 
+    
+    /* 2. Center the content inside the card */
+    align-items: center; 
+    text-align: center;
+    
+    /* 3. Style the button/card container */
+    padding: 10px;
+    border-radius: 12px; /* Smoother corners for a card look */
+    cursor: pointer;
+    
+    /* Use the harmonious gradient */
+    background: linear-gradient(135deg, #ffc8a8, #f8a7a7);
+    color: #5d0000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* More pronounced shadow */
+    
+    /* Define a fixed size for the card */
+    width: 220px;   /* wider card */
+  height: auto;
+  padding: 15px;  /* more breathing space */
+    
+    /* Ensure the text has vertical space */
+    gap: 8px; 
+}
+
+.subcat-icon {
+    /* 1. KEY: Make the image large, spanning the width of the card */
+    width: 100%; 
+    height: 140px; /* Fixed height for consistent image size (adjust as needed) */
+    
+    /* 2. Style the image itself */
+    object-fit: cover; /* Ensures the image fills the area without distortion */
+    border-radius: 8px; /* Rounded corners for the image */
+    
+    /* Remove any default margin */
+    margin: 0; 
+}
+
+.tab-image-button span {
+    /* Style for the text title */
+    font-weight: bold;
+    font-size: 0.95em;
+    padding: 0 5px; /* Add slight padding around text if needed */
+}
+
+.tab-image-button.active {
+    /* Active state styling */
+    outline: 4px solid #050505; /* Highlight border */
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.7);
+}
